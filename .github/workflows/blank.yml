@@ -1,7 +1,7 @@
-name: Auto-Commit CI
+name: Auto-Commit for Bgl
 
 permissions:
-  contents: write  # Права на запись в репозиторий
+  contents: write
 
 on:
   push:
@@ -14,21 +14,22 @@ jobs:
     
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: 'main'  # Явно указываем ветку
 
       - name: Setup Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
+
+      - name: Create test change (можно удалить после проверки)
+        run: echo "Test $(date)" >> test.txt
+
       - name: Check for changes
         id: changes
         run: |
           git add .
           git diff-index --quiet HEAD || echo "changes=true" >> $GITHUB_OUTPUT
           
-      - name: Commit and push if changes exist
+      - name: Commit and push
         if: steps.changes.outputs.changes == 'true'
         run: |
           git commit -m "Automated updates [skip ci]"
