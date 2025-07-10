@@ -1,0 +1,23 @@
+{
+  "use_images": false,
+  "grid": true,
+  "show_labels": true,
+  "default_font": {
+    "family": "Verdana",
+    "size": 12,
+    "color": "#555555",
+    "style": "normal"
+  },
+  "default_connection": {
+    "color": "#888888",
+    "width": 2,
+    "style": "arrow"
+  },
+  "last_client": "петя",
+  "image_map": {
+    "бог 1": "бог.png",
+    "отец 1": "отец.png",
+    "сын 1": "ребенок.png"
+  },
+  "background_color": "#f6f3ef"
+}
