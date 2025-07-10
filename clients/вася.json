@@ -1,0 +1,46 @@
+{
+  "figures": [
+    {
+      "role": "бог 1",
+      "x": 5,
+      "y": 1,
+      "label": "ты лучший",
+      "color": "#aaccee",
+      "direction": "up"
+    },
+    {
+      "role": "отец 1",
+      "x": 2,
+      "y": 2,
+      "label": "отец",
+      "color": "#aaccee",
+      "direction": "up"
+    },
+    {
+      "role": "сын 1",
+      "x": 5,
+      "y": 4,
+      "label": "сын",
+      "color": "#aaccee",
+      "direction": "up"
+    }
+  ],
+  "connections": [
+    {
+      "from": 1,
+      "to": 0,
+      "label": "связь к богу",
+      "style": "line",
+      "color": "#008040",
+      "width": 4
+    },
+    {
+      "from": 2,
+      "to": 1,
+      "label": "",
+      "style": "arrow",
+      "color": "#008040",
+      "width": 4
+    }
+  ]
+}

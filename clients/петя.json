@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "role": "бог 1",
+      "x": 5,
+      "y": 1,
+      "label": "ты лучший",
+      "color": "#aaccee",
+      "direction": "up"
+    },
+    {
+      "role": "отец 1",
+      "x": 2,
+      "y": 3,
+      "label": "отец",
+      "color": "#aaccee",
+      "direction": "right"
+    },
+    {
+      "role": "сын 1",
+      "x": 4,
+      "y": 4,
+      "label": "сын",
+      "color": "#aaccee",
+      "direction": "left"
+    }
+  ],
+  "connections": []
+}
